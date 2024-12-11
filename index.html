@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task List</title>
+    <link rel="preconnect" href="http://fonts.googleapis.com">
+    <link rel="preconnect" href="http://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Lista de Tarefas</h1>
+        </header>
+
+        <form id="task-form">
+            <input type="text" id="new-task" required placeholder="Digite o nome da tarefa...">
+            <button type="submit">Adicionar</button>
+        </form>
+
+        <section id="task-list">
+            <h2>Minhas Tarefas</h2>
+            <ul id="tasks"></ul>
+        </section>
+
+        <button id="clear-tasks">Apagar Todas as Tarefas</button>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>

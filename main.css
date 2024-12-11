@@ -1,0 +1,138 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Corpo da página */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Container centralizado */
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+/* Cabeçalho */
+header h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Formulário */
+form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+form input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #e0d259;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+form input[type="text"]:focus {
+    outline: none;
+    border-color: #bda72f;
+}
+
+form button {
+    background-color: #e0d259;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #bda72f;
+}
+
+/* Lista de tarefas */
+#task-list h2 {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    background-color: #f9f9f9;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #e0d259;
+    border-radius: 6px;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+li:hover {
+    background-color: #fff8c4;
+}
+
+/* Botão de apagar tarefa */
+.delete-btn {
+    background-color: #ff6666;
+    color: #fff;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+    background-color: #cc4c4c;
+}
+
+/* Botão de apagar todas as tarefas */
+#clear-tasks {
+    background-color: #ff6666;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+#clear-tasks:hover {
+    background-color: #cc4c4c;
+}
+
+/* Estilo da tarefa concluída */
+.task-text.completed {
+    text-decoration: line-through;
+    color: #777;
+}
+
